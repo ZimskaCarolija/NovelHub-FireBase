@@ -1,0 +1,106 @@
+.contejner {
+    margin: 10%;
+    color: #7D5E3F;
+}
+
+h1 {
+    color: #F03861;
+}
+
+.Knjiga {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #F03861;
+    box-shadow: 5px 5px 15px #F03861;
+    padding: 10px;
+    border: 3px solid #F03861;
+    border-radius: 25px;
+    margin-top: 2%;
+}
+
+.Knjiga a  , #DugmeDodajzanr , #CreairajKnjigu{
+    transition-duration: 1s;
+    background-color: #F5D97E;
+    color: #F03861;
+    padding: 2px 17px;
+    border: 0px;
+    border-radius: 25px;
+}
+
+.Knjiga div {
+    color: #FEF2F2;
+}
+
+.Knjiga a:hover  , #DugmeDodajzanr:hover , #CreairajKnjigu:hover{
+    background-color: #FEF2F2;
+    color: #F03861;
+}
+.GlavniDeo {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border:  0px;
+    border-radius: 25px;
+    margin-top: 5%;
+    padding: 15px;
+    color: #FEF2F2;
+    justify-content: space-evenly;
+}
+
+.GlavniDeo div {
+    display: inline;
+}
+
+select {
+    min-width: 100px;
+    border-radius: 25px;
+    border-color: #F03861;
+    background-color: #FEF2F2;
+}
+.Opis
+{
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+}
+.Opis textarea
+{
+    margin: auto;
+    width: 80%;
+    min-height: 200px;
+    border: 3px solid  #F03861;
+    border-radius: 25px;
+    
+}
+.create
+{
+    width: auto;
+    color: #7D5E3F;
+}
+.Dodavanje
+{
+    background-color: #F03861;
+    border: 0px;
+    border-radius: 25px;
+
+}
+#ZanroviDodati{
+display: flex;
+    gap: 10px; 
+    justify-content: center;
+    padding-bottom: 10px;
+}
+@media(max-width: 600px) {
+    .GlavniDeo {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .GlavniDeo div
+    {
+        margin: auto;
+        margin-top: 5%;
+    }
+  }

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navigacija.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="Sadrzaj.css">
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+    <script src="Meni.js"></script>
+    <script src="Prijavljivanje.js" type="module"></script>
+    <script src="Popularno.js" type="module"></script>
+    <style>
+       div.RedniBroj {
+    background-color: #FEF2F2;
+    padding :20px;
+    color: #F03861;
+    font-weight: 700;
+    }
+
+    </style>
+</head>
+
+<body onresize="PromenjenaVelicina()">
+    <nav>
+        <div class="Logo"><a href="index.html">NovelHub</a></div>
+        <ul id="LIstaLInk">
+            <li>
+                <a class="Link" href="POpular.html"><img src="Slike/IkonaTrending.png">Popular</a>
+            </li>
+            <li>
+                <a class="Link" href="Favorite.html"><img src="Slike/Libraty.png">My Library</a>
+            </li>
+            <li>
+                <a class="Link" href="WorkShop.html"><img src="Slike/book-fill.png">Workshop</a>
+            </li>
+            <li><a class="Dugme" id="LogIn">Log in</a></li>
+            <li><a class="Dugme" id="SignUp">Sign up</a></li>
+            <li><a class="Dugme" id="LogOut">Log out</a></li>
+        </ul>
+        <div id="Meni" onclick="OtovriMeni()">
+            <span id="StrelaL"></span>
+            <span id="StrelaC"></span>
+            <span id="StrelaD"></span></div>
+    </nav>
+    <div id="Prijavi" class="Prijavljivanje">
+    </div>
+<div class="Kontejner">
+
+    <div class="Sadrzaj" id="SadrzajPopularno">
+
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+body {
+    color: #7D5E3F;
+}
+
+.Kontejner {
+    margin: 4% 10%;
+    text-align: center;
+}
+
+.SlikaDiv {
+    width: 30%;
+    min-width: 150px;
+}
+
+#Slika {
+    width: 100%;
+}
+
+.opis {
+    display: flex;
+    flex-direction: row;
+}
+
+.OpisOsnovni {
+    margin-left: 5%;
+    text-align: left;
+}
+
+h1 {
+    color: #F03861;
+}
+
+#Favorit
+{
+    margin-top: 15px;
+}
+#Favorit button
+{
+    background-color: #F5D97E;
+    color: #F03861;
+    border: #F5D97E;
+}
+#Favorit button:hover
+{
+    background-color: #F03861;
+    color: #F5D97E;
+    border: #F5D97E;
+}
+#OpisKOntejner {
+    margin-top: 3%;
+    text-align: left;
+    font-size: 20px;
+}
+
+.IzborAkcije {
+    display: flex;
+    gap: 40px;
+    border-bottom: 3px solid #F03861;
+}
+
+.IzborAkcije h1:hover {
+    color: #F5D97E;
+}
+
+.Chapter {
+    margin-top: 1%;
+    display: flex;
+    background-color: #F03861;
+    color: #FEF2F2;
+    padding-left: 40px;
+    padding-right: 40px;
+    justify-content: space-between;
+    border: 0px;
+    border-radius: 25px;
+    width: 100%;
+}
+
+.Chapter:hover {
+    box-shadow: 5px 5px 10px #F03861;
+}
+
+#ChapteriKOntejner {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .opis {
+        flex-direction: column;
+        align-items: center;
+    }
+    .SlikaDiv {
+        width: 60%;
+    }
+}

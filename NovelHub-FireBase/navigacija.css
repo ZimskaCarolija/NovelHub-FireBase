@@ -1,0 +1,209 @@
+body {
+    background-color: #FFFAFA;
+    color: #0e1111;
+}
+
+a {
+    text-decoration: none;
+    color: #0e1111;
+}
+
+nav {
+    position: sticky;
+    background-color: #FFFAFA;
+    border-bottom: 3px solid #F03861;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    min-height: 70px;
+}
+
+input {
+    border: 2px solid #F03861;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+.Logo {
+    font-size: 2em;
+    font-weight: 700;
+    display: inline-block;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+ul {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-right: 20px;
+    align-content: center;
+}
+
+li {
+    margin: 20px 30px 20px 5px;
+    list-style: none;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+a img {
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+.Dugme {
+    display: inline;
+    transition: 0.2s;
+    background-color: #F03861;
+    color: #FFFAFA;
+    padding: 10px;
+    border: 3px solid #F03861;
+    border-radius: 25px;
+    width: 70px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.Dugme:hover {
+    transition: 0.6s;
+    background-color: #FFFAFA;
+    color: #F03861;
+}
+
+.Link {
+    transition: 0.1s;
+    border-bottom: 0px solid #F03861;
+}
+
+.Link:hover {
+    transition: 0.1s;
+    border-bottom: 3px solid #F03861;
+}
+
+#Meni {
+    background-color: #F03861;
+    color: #FFFAFA;
+    margin: 10px;
+    padding: 10px 20px;
+    border: 3px solid #F03861;
+    border-radius: 50%;
+    order: 3;
+    text-align: center;
+    margin: 10px;
+    max-width: 70px;
+    display: none;
+}
+
+#Meni span {
+    display: block;
+    min-width: 20px;
+    width: 80%;
+    height: 4px;
+    margin: 5px auto;
+    /* Promijenite marginu na 10px auto */
+    position: relative;
+    background: #FFFAFA;
+    border-radius: 3px;
+}
+
+#Meni:hover {
+    background-color: #FFFAFA;
+    border: 0px solid transparent
+}
+
+#Meni:hover span {
+    background: #F03861;
+}
+
+.Prijavljivanje h4 {
+    text-align: center;
+    color: #0e1111;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.Prijavljivanje {
+    display: flex;
+    flex-direction: column;
+    background-color: #F5D97E;
+    max-width: 400px;
+    padding: 5%;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-height: 500px;
+    justify-content: center;
+    align-content: center;
+    border: 3px solid #F5D97E;
+    border-radius: 25px;
+    box-shadow: 0px 0px 40px #F5D97E;
+    display: none;
+}
+
+.Prijavljivanje div {
+    margin: 5% 0;
+    color: #F03861;
+}
+
+.Prijavljivanjep div input {
+    border: 3px solid #F03861;
+    color: #F03861;
+    border-radius: 25px;
+}
+
+.Prijavljivanje div button {
+    margin-left: 10px;
+}
+
+#LogOut {
+    display: none;
+}
+.Zanr {
+    background-color: #F03861;
+    color: #FEF2F2;
+    border: 2px solid #F03861;
+    border-radius: 25px;
+    padding: 10px;
+    min-width: 70px;
+}
+#Zanrovi {
+    display: flex;
+    gap: 10px;
+}
+@media only screen and (max-width: 800px) {
+    nav {
+        justify-content: start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .Logo {
+        display: block;
+        order: 1;
+    }
+    ul {
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        order: 2;
+        display: none;
+        height: 0;
+    }
+    li {
+        transition: 0.2s;
+        margin: 30px 0 30px 0;
+        text-align: center;
+    }
+    #Meni {
+        display: block;
+    }
+}

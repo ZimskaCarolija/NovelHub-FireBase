@@ -1,0 +1,23 @@
+#Tekst {
+    margin: 4% 10%;
+    color: #7D5E3F;
+    font-size: 24px;
+    border-bottom: 3px solid #F03861;
+    padding-bottom: 35px;
+}
+
+h1 {
+    color: #F03861;
+    margin: 3% 10%;
+}
+
+.DugmiciChapter {
+    margin: 0px 10% 10% 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#Predhodno,
+#Sledece {
+    opacity: 0.2;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Knjiga.css">
+    <link rel="stylesheet" href="navigacija.css">
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+    <script src="Meni.js"></script>
+    <script src="Prijavljivanje.js" type="module"></script>
+    <script src="Knjiga.js" type="module"></script>
+</head>
+
+<body onresize="PromenjenaVelicina()">
+    <nav>
+        <div class="Logo"><a href="index.html">NovelHub</a></div>
+        <ul id="LIstaLInk">
+            <li>
+                <a class="Link" href="POpular.html"><img src="Slike/IkonaTrending.png">Popular</a>
+            </li>
+            <li>
+                <a class="Link" href="Favorite.html"><img src="Slike/Libraty.png">My Library</a>
+            </li>
+            <li>
+                <a class="Link" href="WorkShop.html"><img src="Slike/book-fill.png">Workshop</a>
+            </li>
+            <li><a class="Dugme" id="LogIn">Log in</a></li>
+            <li><a class="Dugme" id="SignUp">Sign up</a></li>
+            <li><a class="Dugme" id="LogOut">Log out</a></li>
+        </ul>
+        <div id="Meni" onclick="OtovriMeni()">
+            <span id="StrelaL"></span>
+            <span id="StrelaC"></span>
+            <span id="StrelaD"></span></div>
+    </nav>
+    <div id="Prijavi" class="Prijavljivanje">
+    </div>
+    
+    <div class="Kontejner">
+        <div class="opis">
+            <div class="SlikaDiv"><img id="Slika" src="Slike/SlikaVampire.jpg"></div>
+            <div class="OpisOsnovni">
+                <h1 id="Naziv">Knjiga</h1>
+                <h3 id="Autor">Autor : Aleksa</h3>
+                <h3 id="Pregledi">Views : 3000</h3>
+                <h3>Genres :</h3>
+                <div id="Zanrovi">
+                    <div class="Zanr">Action</div>
+                </div>
+                <div id="Favorit">
+                    <button class="Dugme" id="Sacuvaj">Save</button>
+                </div>
+            </div>
+        </div>
+        <div class="IzborAkcije">
+            <h1 onclick="Opis()">Description</h1>
+            <h1 onclick="Capter()">Chapters</h1>
+        </div>
+        <div id="OpisKOntejner">
+            Ovo je opis
+        </div>
+        <div id="ChapteriKOntejner">
+            <div class="Chapter">
+                <h3>My Vampire System</h3>
+                <h3>Chapter 3</h3>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        function Opis() {
+            document.getElementById("OpisKOntejner").style.display = 'block';
+            document.getElementById("ChapteriKOntejner").style.display = 'none';
+        }
+
+        function Capter() {
+            document.getElementById("OpisKOntejner").style.display = 'none';
+            document.getElementById("ChapteriKOntejner").style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>

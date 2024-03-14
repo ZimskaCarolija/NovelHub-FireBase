@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+    <script src="Meni.js"></script>
+    <script src="WorkShop.js" type="module"></script>
+    <script src="Prijavljivanje.js" type="module"></script>
+    <link rel="stylesheet" href="navigacija.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="Sadrzaj.css">
+    <link rel="stylesheet" href="WorkShop.css">
+</head>
+
+<body onresize="PromenjenaVelicina()">
+    <nav>
+        <div class="Logo"><a href="index.html">NovelHub</a></div>
+        <ul id="LIstaLInk">
+            <li>
+                <a class="Link" href="POpular.html"><img src="Slike/IkonaTrending.png">Popular</a>
+            </li>
+            <li>
+                <a class="Link" href="Favorite.html"><img src="Slike/Libraty.png">My Library</a>
+            </li>
+            <li>
+                <a class="Link" href="WorkShop.html"><img src="Slike/book-fill.png">Workshop</a>
+            </li>
+            <li><a class="Dugme" id="LogIn">Log in</a></li>
+            <li><a class="Dugme" id="SignUp">Sign up</a></li>
+            <li><a class="Dugme" id="LogOut">Log out</a></li>
+        </ul>
+        <div id="Meni" onclick="OtovriMeni()">
+            <span id="StrelaL"></span>
+            <span id="StrelaC"></span>
+            <span id="StrelaD"></span></div>
+    </nav>
+    <div id="Prijavi" class="Prijavljivanje">
+    </div>
+
+
+    <div class="contejner">
+        <h1 id="KOrisnik"></h1>
+        <div id="Knjige">
+
+            <div class='Knjiga'>
+                <div class='Naziv'> + knjiga.naziv + </div> <a>Chapters</a > <a> Delete </a>
+             </div>
+        </div>
+
+        <div class="Dodavanje">
+            <div class="GlavniDeo">
+                <div><label for="NoveNaziv">Name : </label><input type="text" id="NoveNaziv"></div>
+                 <div><label>Genre :</label><select id="ZanroviLista"></select> <button class="Dugme" id="DugmeDodajzanr">Add</button></div>
+                 <div><label>Cover :</label><select id="CoverLista"></select></div>
+                 <div><button class="Dugme" id="CreairajKnjigu">Create</button></div>
+            </div>
+            <div class="Opis"><textarea id="Opis"></textarea></div>
+            <div id="ZanroviDodati"></div>
+        </div>
+    </div>
+</body>
+
+</html>

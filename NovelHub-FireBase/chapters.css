@@ -1,0 +1,56 @@
+#contejner
+{
+    margin: 10%;
+}
+h1
+{
+    color: #F03861;
+}
+#capteri
+{
+    margin:10% 1%;
+}
+.Chapter
+{
+    display:  flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #F03861;
+    border: 0px;
+    border-radius: 25px;
+    padding: 20px;
+    color: #FEF2F2;
+    margin-top: 5%;
+}
+.Dugmici,.Osnova{
+    display:  flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+}
+input
+{
+    width: 120px;
+}
+#Dodavanje div,button
+{
+margin-top:  5%;
+}
+h3,input
+{
+    color: #F03861;
+}
+@media(max-width: 600px) {
+    #contejner
+    {
+    margin:10% 1%;
+    }
+    .Chapter
+    {
+        flex-direction: column;
+    }
+    .Dugmici
+    {
+        margin-top: 20px;
+    }
+  }
